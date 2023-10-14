@@ -4,6 +4,37 @@ body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
+.top_header {
+  position: sticky;
+  top: 0;
+  background-color: rgb(183, 26, 26);
+  padding-left: 10%;
+  display: flex;
+  align-items: center;
+  padding-bottom: 5px;
+}
+.top_header nav {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.top_header nav img {
+  width: 100px;
+}
+.top_header nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 28px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.top_header nav a:hover {
+  color: rgb(243, 181, 66);
+  text-decoration: underline;
+}
+
 .wrapper {
   max-width: 90%;
   margin: auto;
@@ -15,7 +46,12 @@ article {
   flex-direction: column;
 }
 article h1 {
+  font-size: 36px;
+}
+article h2 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 30px;
+  padding-left: 15px;
 }
 article p {
   line-height: 1.5;
@@ -29,6 +65,7 @@ main {
 
 aside {
   width: 320px;
+  margin-top: 40px;
 }
 
 .figure_l {
@@ -50,16 +87,98 @@ aside {
   margin: auto;
 }
 
-.popular_list {
+.read_more {
+  background-color: lightgray;
+  padding: 5px 20px 10px 10px;
+}
+.read_more h3 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  text-shadow: 1px 1px 3px black;
+  padding-left: 20px;
+  font-size: 1.7rem;
+}
+.read_more .popular_list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 25px;
+  counter-reset: myCounter;
+}
+.read_more .popular_list li {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+}
+.read_more .popular_list li:before {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 900;
+  text-shadow: 1px 1px 3px white;
+  counter-increment: myCounter;
+  content: counter(myCounter);
+  font-size: 60px;
+  display: inline-block;
+  text-align: center;
+  margin-left: -45px;
+  padding-right: 10px;
+}
+.read_more .popular_list a {
+  text-decoration: none;
+  line-height: 1.4;
+  color: black;
+  cursor: pointer;
+}
+.read_more .popular_list a:hover {
+  color: red;
+  text-decoration: underline;
 }
 
 .advert_sidebar {
-  height: 80%;
+  height: 60%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
+}
+
+mark {
+  font-size: 20px;
+}
+
+details {
+  padding: 20px;
+}
+details summary {
+  font-size: 24px;
+  cursor: pointer;
+  color: blue;
+}
+details ul li {
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+.bottom_footer {
+  background-color: rgb(75, 75, 75);
+  padding: 5px 20% 15px 10%;
+  color: white;
+}
+.bottom_footer a {
+  margin-right: 25px;
+  text-decoration: none;
+  color: white;
+}
+.bottom_footer a:hover {
+  color: yellow;
+}
+.bottom_footer img {
+  width: 30px;
+}
+.bottom_footer .sm {
+  margin-right: 14px;
+}
+.bottom_footer div {
+  display: flex;
   align-items: center;
 }/*# sourceMappingURL=style.css.map */
