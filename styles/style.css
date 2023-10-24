@@ -300,6 +300,15 @@ details ul li {
   padding: 5px 20% 15px 10%;
   color: white;
 }
+@media (max-width: 800px) {
+  .bottom_footer {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px 15px 10px;
+    align-items: center;
+    justify-content: center;
+  }
+}
 .bottom_footer a {
   margin-right: 25px;
   text-decoration: none;
@@ -311,10 +320,22 @@ details ul li {
 .bottom_footer img {
   width: 30px;
 }
+@media (max-width: 800px) {
+  .bottom_footer img {
+    width: 24px;
+  }
+}
 .bottom_footer .sm {
   margin-right: 14px;
 }
 .bottom_footer div {
   display: flex;
   align-items: center;
+}
+@media (max-width: 800px) {
+  .bottom_footer div {
+    margin: 5px 0 10px 0;
+    flex-flow: wrap;
+    justify-content: center;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -286,6 +286,14 @@ details {
   background-color: $bottom_footer;
   padding: 5px 20% 15px 10%;
   color: white;
+  @media (max-width: 800px) {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px 15px 10px;
+    align-items: center;
+    justify-content: center;
+    
+  }
   a {
     margin-right: 25px;
     text-decoration: none;
@@ -296,12 +304,23 @@ details {
   }
   img {
     width: 30px;
+    @media (max-width: 800px) {
+      width: 24px;
+      
+    }
   }
   .sm {
     margin-right: 14px;
   }
   div {
+    
     display: flex;
     align-items: center;
+    
+    @media (max-width: 800px) {
+      margin: 5px 0 10px 0;
+      flex-flow: wrap;
+      justify-content: center;
+    }
   }
 }
