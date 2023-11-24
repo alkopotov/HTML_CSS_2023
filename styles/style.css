@@ -260,6 +260,7 @@ aside {
   }
   50% {
     transform: rotateX(180deg);
+    opacity: 0;
   }
   75% {
     background-color: rgb(183, 26, 26);
